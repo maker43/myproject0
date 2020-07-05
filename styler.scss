@@ -1,0 +1,150 @@
+$myFont:"Times New Roman", sans-serif;
+$myColor:  #e7b582;
+
+%customparagraph {
+    font-family: $myFont;
+    text-align: justify;
+        
+}
+
+// styling for page layout
+#jumbo {
+    background: url('pobednik.jpg') no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover
+}
+
+#logoBelgrade{
+    mix-blend-mode: overlay;
+    
+    
+}
+@media (max-width:990px) {
+    #logoBelgrade{
+        text-align: right;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 920px;
+    }
+}
+
+footer {
+    margin-top:10%;
+    margin-bottom:10%;
+    a {
+        color:black;
+    }
+    div div {
+        text-align: center;
+    }
+
+    @media (min-width:600px) {
+        
+        #linktotop>a::before {
+            content:"Back to Top"
+        }
+        #linktotop {
+            background-color: $myColor;
+            margin-left: auto;
+            margin-right: auto;
+            font-size:20px;
+            border:solid;
+            padding-left: 5%;
+            padding-right:5%;
+            display: inline-block;
+        
+        }
+        
+    }
+    @media (max-width:599px) {
+        #logoBelgrade {
+            text-align: right;
+        }
+        #linktotop>a::before {
+            content:"\2191"
+        }
+        #linktotop {
+            background-color: $myColor;
+            margin-left:40%;
+            margin-right:40%;
+            font-size: 24px;
+            text-align: center;
+            border:solid;
+            padding:none;           
+            // color:black;
+            
+        }
+    }
+    #credits {
+        font-style: italic ;
+        margin-top: 6vw;
+        background-color: $myColor;
+    }
+}
+
+
+
+// body of page index.html
+#introduction {  
+    margin-top: 4vw;  
+    font-family: $myFont;
+    font-style: initial;
+    margin-bottom: 4vw;
+}
+.txt {
+      margin-top:5vw;
+      margin-bottom:5vw;
+
+      font-family: $myFont;
+      font-size:20px;
+      text-align: justify;
+}
+#navlist {
+    display: flex;    
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.listI {
+    a:hover {
+       color:$myColor;       
+    }   
+    a {
+        text-align: center;
+        color: black;
+        
+        img {
+            width:142px;
+            height:142px;
+        }
+        
+    }
+}
+#pict {
+    
+    @extend %customparagraph;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    
+    
+    
+}
+@media (min-width:600px) {
+    .txt{
+        font-size: 20px;
+        text-indent: 2em;
+    }
+
+}
+@media (max-width:599px) {
+    .txt {
+        font-size:3vw;
+    }
+
+}
+// end of css for body of index.htm

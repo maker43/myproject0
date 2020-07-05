@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <title>Belgrade</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Belgrade</title>
+    <link rel="stylesheet" href="styles.css" >
+    
   </head>
   <body>
-    <div class="container">
-        <div class="jumbotron" style="background: url('pobednik.jpg') no-repeat left; -webkit-background-size: auto; -moz-background-size: cover; -o-background-size: cover; background-size: auto;">
-            <h1>Belgrade!</h1>
-            <p>Welcome to Belgrade, loved by visitors and people that chose to stay in it
-            </p>
-            <br><br><br>
-        </div>
-      </div>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+      <div id="header" class="container">
+        <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+            </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
+            <ul id="myNav" class="navbar-nav">
+              <li class="nav-item  active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -42,20 +35,69 @@
           </div>
         </nav>
       </div>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-      </div>
       <div class="container">
-        <div id="intruduction">
-          <p class="text-body">
-            Welcome to Belgrade, which ever road you took to get here, relax, you are finaly here. Maybe you didnt know 
-            but this is what you have been looking for. A place to sit and relax, and most importantly a place to love 
-            and be loved in return.
+          <div class="jumbotron" id="jumbo">
+              <h1 id="logoBelgrade">Belgrade!</h1>
+              <br><br><br><br><br>
+          </div>
+      </div>
+    </header>
+
+      <div class="container">
+        <h1 id="introduction"> Dobrodošli. <span style="font-size: 18px;">/Welcome./<span></h1>
+      </div>
+      
+      <div class="container">        
+          <p class="txt">
+            Whatever road you took we are glad that you are here now. Belgrade has a unique charm that captures everyone that goes true it. 
+            Since you are new here, our first advice is relax, take your time and let the Magic and postive energy of Belgrade take you. 
+            There are a lot of things that we would like to explain to you, but we cannot make into the words things that you need to experience for yourself. 
+            In order for you to realise what we are talking about. 
+            The closest that words came to explain what is that feeling that all inhabitance of Belgrade have is in the book of Momo Kapor, "The Magic of Belgrade"
+            for which we have one dedicated <a href="magic.html">page</a>.
+            
           </p>
+      </div>
+      <div id= "pict">
+          <div class="container"><p class="txt" style="text-indent:0%;">Here are some things that can help you get started:</p>
+            
+            <ul id="navlist">
+              <li class="listI">
+                <a href="restaurants.html">
+                  <img src="foodBg.jpg" alt="Food in Belgrade">
+                  <p>Food</p>
+                </a>
+              </li>
+              <li class="listI">
+                <a href="tango.html">
+                  <img src="tangoNatural.jpg" alt="Dance">
+                  <p>Dance</p>
+                </a>
+              </li>
+              <li class="listI">
+                <a href="magic.html">
+                  <img src="MagijaBeograda.jpg" alt="Momo Kapor-Magic of belgrade">
+                  <p>Words</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      
+      <footer>
+        <div>
+          <br><br>
+          <div>
+            <p id="linktotop"><a href="#header"></a></p>
+          </div>
+          <div class="col-lg-12" style="background-color:#e7b582">
+            <br>
+            <p>Made for CS50 project0</p>
+            <p>By: Uroš Čučković</p>
+            <br>
+          </div>
         </div>
-      </div>  
+      </footer> 
     
 
     <!-- Optional JavaScript -->

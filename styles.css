@@ -1,10 +1,127 @@
-#introduction { 
-    text-align: justify;
-    color: red;
+@charset "UTF-8";
+#pict {
+  font-family: "Times New Roman", sans-serif;
+  text-align: justify;
+}
+
+#jumbo {
+  background: url("pobednik.jpg") no-repeat center center/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logoBelgrade {
+  mix-blend-mode: overlay;
+}
+
+@media (max-width: 990px) {
+  #logoBelgrade {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 920px;
+  }
+}
+footer {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+footer a {
+  color: black;
+}
+footer div div {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  footer #linktotop > a::before {
+    content: "Back to Top";
+  }
+  footer #linktotop {
+    background-color: #e7b582;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
+    border: solid;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+  }
+}
+@media (max-width: 599px) {
+  footer #logoBelgrade {
+    text-align: right;
+  }
+  footer #linktotop > a::before {
+    content: "↑";
+  }
+  footer #linktotop {
+    background-color: #e7b582;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 24px;
+    text-align: center;
+    border: solid;
+    padding: none;
+  }
+}
+footer #credits {
+  font-style: italic;
+  margin-top: 6vw;
+  background-color: #e7b582;
+}
 
+#introduction {
+  margin-top: 4vw;
+  font-family: "Times New Roman", sans-serif;
+  font-style: initial;
+  margin-bottom: 4vw;
 }
-.text-body{
-    color: red;
+
+.txt {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 20px;
+  text-align: justify;
 }
+
+#navlist {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.listI a:hover {
+  color: #e7b582;
+}
+.listI a {
+  text-align: center;
+  color: black;
+}
+.listI a img {
+  width: 142px;
+  height: 142px;
+}
+
+#pict {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+  .txt {
+    font-size: 20px;
+    text-indent: 2em;
+  }
+}
+@media (max-width: 599px) {
+  .txt {
+    font-size: 3vw;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
