@@ -94,7 +94,7 @@ footer {
     margin-top: 4vw;  
     font-family: $myFont;
     font-style: initial;
-    margin-bottom: 4vw;
+    margin-bottom: 30px;
 }
 .txt {
     margin-top:5vw;
@@ -141,6 +141,10 @@ footer {
 @media (max-width:599px) {
     .txt {
         font-size:18px;
+    }
+    #introduction {
+        font-size:30px;
+        margin-bottom: 40px;
     }
 }
 // end of css for body of index.htm
@@ -221,6 +225,10 @@ footer {
     }
 }
 .kapor {
+    margin-top: 25px;
+    text-align: justify;
+    font-family: $myFont;
+    font-size: 20px;
 
 }
 #kaporquote{
