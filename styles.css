@@ -84,7 +84,7 @@ footer #credits {
   margin-top: 4vw;
   font-family: "Times New Roman", sans-serif;
   font-style: initial;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .txt {
@@ -132,7 +132,6 @@ footer #credits {
 
   #introduction {
     font-size: 30px;
-    margin-bottom: 40px;
   }
 }
 @media (min-width: 600px) {
