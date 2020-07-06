@@ -6,6 +6,11 @@ $myColor:  #e7b582;
     text-align: justify;
         
 }
+%quotations {
+    color:grey;
+    font-size: 20px;
+    font-style: italic;
+}
 
 // universal
 #jumbo {
@@ -17,9 +22,7 @@ $myColor:  #e7b582;
 }
 
 #logoBelgrade{
-    mix-blend-mode: overlay;
-    
-    
+    mix-blend-mode: overlay;   
 }
 @media (max-width:990px) {
     #logoBelgrade{
@@ -94,32 +97,28 @@ footer {
     margin-bottom: 4vw;
 }
 .txt {
-      margin-top:5vw;
-      margin-bottom:5vw;
-
-      font-family: $myFont;
-      font-size:20px;
-      text-align: justify;
+    margin-top:5vw;
+    margin-bottom:5vw;
+    font-family: $myFont;
+    font-size:20px;
+    text-align: justify;
 }
 // end of universal
 
 // body of page index.html
 #navlist {
-
     display: flex;     
     justify-content: space-evenly;
     list-style-type: none;
     flex-wrap: wrap; 
 }
 .listI {
-
     a:hover {
        color:$myColor;       
     }   
     a {
         text-align: center;
-        color: black;
-        
+        color: black;        
         img {
             width:142px;
             height:142px;
@@ -127,69 +126,82 @@ footer {
         
     }
 }
-#pict {
-    
-    @extend %customparagraph;
-    
+#pict {    
+    @extend %customparagraph;    
     margin-top: 40px;
-    margin-bottom: 40px;
-    
-    
-    
-    
+    margin-bottom: 40px;    
 }
 @media (min-width:600px) {
     .txt{
         font-size: 20px;
         text-indent: 2em;
     }
-
 }
+
 @media (max-width:599px) {
     .txt {
-        font-size:3vw;
+        font-size:18px;
     }
-
 }
 // end of css for body of index.htm
 
 // restaurants.html
-
-#gridcontainer {
-    background-color: black;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 4px;
-    text-align:center;
-    align-content: space-evenly;
-    padding:4px;
-
+@media (min-width:600px) {
+    #gridcontainer {
+        background-color: black;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 4px;
+        text-align:center;
+        align-content: space-evenly;
+        padding:4px;
+    }
     .grid-item {
         padding:15px;
         background-color: white;
     }
     .grid-item.grid-head {
-
         font-size: 18px;
         text-align: center;
         font-style: italic;
         background-color: $myColor;
     }
+        
+    
+}
 
+@media (max-width:599px) {
+    #gridcontainer {
+        background-color: black;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 4px;
+        text-align:center;
+        align-content: space-evenly;
+        padding:4px;
+    }
+    .grid-item {
+        padding:10px;
+        background-color: white;
+        font-size: 14px;
+    }
+    .grid-item.grid-head {    
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        background-color: $myColor;
+    }    
 }
 //end of restaurant.html
 // style tango.html
 .tango {
     margin-top: 25px;
-    text-indent: 2em;
     text-align: justify;
-   
+    font-family: $myFont;
+    font-size: 20px;   
 }
 #tangoquote {
-    color:grey;
-    font-size: 20;
-    font-style: italic;
-    
+    @extend %quotations    
 }
 #tangoimg {
     img {
@@ -197,4 +209,22 @@ footer {
         max-height: 100%;
         margin-top: 40px;
     }
+}
+
+//magic.html style
+
+#kaporimg {    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 40px;
+    }
+}
+.kapor {
+
+}
+#kaporquote{
+    @extend %quotations;
+    text-align:justify;
+
 }

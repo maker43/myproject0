@@ -4,6 +4,12 @@
   text-align: justify;
 }
 
+#kaporquote, #tangoquote {
+  color: grey;
+  font-size: 20px;
+  font-style: italic;
+}
+
 #jumbo {
   background: url("pobednik.jpg") no-repeat center center/cover;
   -webkit-background-size: cover;
@@ -121,45 +127,77 @@ footer #credits {
 }
 @media (max-width: 599px) {
   .txt {
-    font-size: 3vw;
+    font-size: 18px;
   }
 }
-#gridcontainer {
-  background-color: black;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 4px;
-  text-align: center;
-  align-content: space-evenly;
-  padding: 4px;
-}
-#gridcontainer .grid-item {
-  padding: 15px;
-  background-color: white;
-}
-#gridcontainer .grid-item.grid-head {
-  font-size: 18px;
-  text-align: center;
-  font-style: italic;
-  background-color: #e7b582;
-}
+@media (min-width: 600px) {
+  #gridcontainer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4px;
+    text-align: center;
+    align-content: space-evenly;
+    padding: 4px;
+  }
 
+  .grid-item {
+    padding: 15px;
+    background-color: white;
+  }
+
+  .grid-item.grid-head {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    background-color: #e7b582;
+  }
+}
+@media (max-width: 599px) {
+  #gridcontainer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4px;
+    text-align: center;
+    align-content: space-evenly;
+    padding: 4px;
+  }
+
+  .grid-item {
+    padding: 10px;
+    background-color: white;
+    font-size: 14px;
+  }
+
+  .grid-item.grid-head {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    background-color: #e7b582;
+  }
+}
 .tango {
   margin-top: 25px;
-  text-indent: 2em;
   text-align: justify;
-}
-
-#tangoquote {
-  color: grey;
-  font-size: 20;
-  font-style: italic;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 20px;
 }
 
 #tangoimg img {
   max-width: 100%;
   max-height: 100%;
   margin-top: 40px;
+}
+
+#kaporimg img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 40px;
+}
+
+#kaporquote {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */
