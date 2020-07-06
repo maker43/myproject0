@@ -129,7 +129,8 @@ footer {
 #pict {    
     @extend %customparagraph;    
     margin-top: 40px;
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
+      
 }
 @media (min-width:600px) {
     .txt{
@@ -141,9 +142,11 @@ footer {
 @media (max-width:599px) {
     .txt {
         font-size:18px;
+        text-indent: 2em; 
     }
     #introduction {
         font-size:30px;
+        margin-bottom: 16%;
         
     }
 }

@@ -128,10 +128,12 @@ footer #credits {
 @media (max-width: 599px) {
   .txt {
     font-size: 18px;
+    text-indent: 2em;
   }
 
   #introduction {
     font-size: 30px;
+    margin-bottom: 16%;
   }
 }
 @media (min-width: 600px) {
