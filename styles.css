@@ -93,6 +93,7 @@ footer #credits {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .listI a:hover {
@@ -122,6 +123,43 @@ footer #credits {
   .txt {
     font-size: 3vw;
   }
+}
+#gridcontainer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4px;
+  text-align: center;
+  align-content: space-evenly;
+  padding: 4px;
+}
+#gridcontainer .grid-item {
+  padding: 15px;
+  background-color: white;
+}
+#gridcontainer .grid-item.grid-head {
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  background-color: #e7b582;
+}
+
+.tango {
+  margin-top: 25px;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+#tangoquote {
+  color: grey;
+  font-size: 20;
+  font-style: italic;
+}
+
+#tangoimg img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,43 +12,70 @@
   </head>
   <body>
     <header>
-      <div id="header" class="container">
-        <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul id="myNav" class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="restaurants.html">Restaurants</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tango.html">Tango</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="magic.html">"The Magic of Belgrade"</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="container">
-          <div class="jumbotron" id="jumbo">
-              <h1 id="logoBelgrade">Belgrade!</h1>
-              <br><br><br><br><br>
-          </div>
-      </div>
+        <div id="header" class="container">
+          <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul id="myNav" class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="restaurants.html">Food<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tango.html">Dance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="magic.html">"The Magic of Belgrade"</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+            <div class="jumbotron" id="jumbo">
+                <h1 id="logoBelgrade">Belgrade!</h1>
+                <br><br><br><br><br>
+            </div>
+        </div>
     </header>
+    <div class="container">
+      <h1 id="introduction">Food directions!</h1>
+      <p class="txt">
+        Traditionaly Serbian cousine is concentrated on strong flavours. Sometimes spicy but more often rich in calories. 
+        And most of those calories come from meat.
+        Balkan region is full of influences from all the souraunding countries. 
+        So we chose to show you some dishes and restaurants that will make you feel warm and welcomed in Belgrade:
+      </p>
+    
+      <div id="gridcontainer">
+          <div class="grid-item grid-head">Dish</div>
+          <div class="grid-item grid-head">Description</div>
+          <div class="grid-item grid-head">Restaurant in which you can try it</div>
+          <div class="grid-item">Ćevapi</div>
+          <div class="grid-item">Traditional dish in Serbia, made of minced meat.</div>
+          <div class="grid-item">"Walter"</div>
+          <div class="grid-item">Kajmak</div>
+          <div class="grid-item">Local cream spread</div>
+          <div class="grid-item">"MiS"</div>
+          <div class="grid-item">Veal under "sač"</div>
+          <div class="grid-item">"Sač" is a specific cooking pot</div>
+          <div class="grid-item">"Durmitor"</div>
+          <div class="grid-item">Vegan option</div>
+          <div class="grid-item">Since serbian food is traditionaly overwhelmed with meat</div>
+          <div class="grid-item">"Miamiam"</div>
+      </div>
+      <h1 id="introduction">Bon Appétit! Prijatno..</h1>
+    </div>
     <footer>
-      <div>
-        <br><br>
+      <div>        
         <div>
           <p id="linktotop"><a href="#header"></a></p>
         </div>
-        <div class="col-lg-12" style="background-color:#e7b582">
+        <div class="col-lg-12" id="credits">
           <br>
           <p>Made for CS50 project0</p>
           <p>By: Uroš Čučković</p>
@@ -56,12 +83,12 @@
         </div>
       </div>
     </footer> 
-  
+      
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

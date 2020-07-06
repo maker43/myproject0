@@ -7,7 +7,7 @@ $myColor:  #e7b582;
         
 }
 
-// styling for page layout
+// universal
 #jumbo {
     background: url('pobednik.jpg') no-repeat center center/cover;
     -webkit-background-size: cover;
@@ -87,8 +87,6 @@ footer {
 }
 
 
-
-// body of page index.html
 #introduction {  
     margin-top: 4vw;  
     font-family: $myFont;
@@ -103,12 +101,18 @@ footer {
       font-size:20px;
       text-align: justify;
 }
+// end of universal
+
+// body of page index.html
 #navlist {
-    display: flex;    
+
+    display: flex;     
     justify-content: space-evenly;
     list-style-type: none;
+    flex-wrap: wrap; 
 }
 .listI {
+
     a:hover {
        color:$myColor;       
     }   
@@ -148,3 +152,49 @@ footer {
 
 }
 // end of css for body of index.htm
+
+// restaurants.html
+
+#gridcontainer {
+    background-color: black;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4px;
+    text-align:center;
+    align-content: space-evenly;
+    padding:4px;
+
+    .grid-item {
+        padding:15px;
+        background-color: white;
+    }
+    .grid-item.grid-head {
+
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        background-color: $myColor;
+    }
+
+}
+//end of restaurant.html
+// style tango.html
+.tango {
+    margin-top: 25px;
+    text-indent: 2em;
+    text-align: justify;
+   
+}
+#tangoquote {
+    color:grey;
+    font-size: 20;
+    font-style: italic;
+    
+}
+#tangoimg {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 40px;
+    }
+}
